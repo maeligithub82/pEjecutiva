@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Libros Interactivos Secundaria</title>
+        <meta name="description" content="Libros Interactivos Nivel Secundaria" />
+        <meta name="keywords" content="secundaria, libros, interactivos, matematicas, español, ciencias" />
+        <meta name="author" content="" />
+        <link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/style.css" />	
+        <link rel="stylesheet" type="text/css" href="../css/tipografia.css" />	
+		<script type="text/javascript" src="js/modernizr.custom.79639.js"></script> 
+		
+    </head>
+    <body>
+    <div id="pagewrap">
+        <div class="container">
+			<header></header>		
+
+				<div id="rm-container" class="rm-container">
+
+					<div class="rm-wrapper">
+
+						<div class="rm-cover">
+							<div class="rm-front">
+								<div class="rm-content">
+									<br/>
+									<h2>Educación Basica</h2>
+									<h3>Mapa Curricular de la Educación Básica 2011</h3>
+                                    <br/>
+                                    <br/>
+                                    <br/>
+                                    
+									<a href="#" class="rm-button-open">Entrar</a>
+                                    <br/>
+                                    <br/>
+                                    <br/>
+                                    <br/>
+                                    <br/>
+	   <a href="../index.html" ><img src="img/homeB.png" width="55" height="55" /> </a>
+									<div class="rm-info">
+										<p>
+										</p>
+									</div>
+
+								</div><!-- /rm-content -->
+							</div><!-- /rm-front -->
+
+							
+                            <div class="rm-back">
+								<div class="rm-content">
+								
+                               
+                                
+<!-- Primer DIV -->
+
+<div style="width:310px; height:800px; background:#9C0">
+<img src="img/tabla_a.png" width="310" height="800">
+</div>
+
+								</div><!-- /rm-content -->
+								<div class="rm-overlay"></div>
+
+							</div><!-- /rm-back -->
+
+						</div><!-- /rm-cover -->
+
+						<div class="rm-middle">
+							<div class="rm-inner">
+								<div class="rm-content">
+								
+								
+<!-- Segundo DIV -->
+                                
+<div style="width:310px; height:800px; background:url(img/tabla_b.png);">
+<div id="enlace"><a href="#" class="rm-viewdetails" data-thumb="img/tabla-primaria.png"><img src="../../mapaCurricular/img/enlace.png" width="300" height="45"></a></div>
+</div>
+
+
+								</div><!-- /rm-content -->
+								<div class="rm-overlay"></div>
+							</div><!-- /rm-inner -->
+						</div><!-- /rm-middle -->
+
+						<div class="rm-right">
+
+							<div class="rm-front">
+								
+							</div>
+
+							<div class="rm-back">
+								<span class="rm-close">Cerrar</span>
+								<div class="rm-content">
+
+
+<!-- Tercer DIV -->
+
+<div style="width:310px; height:800px; background:#F58F74">
+
+<img src="img/tabla_c.png" width="310" height="800">
+</div>
+									</div>
+								</div><!-- /rm-content -->
+							</div><!-- /rm-back -->
+
+						</div><!-- /rm-right -->
+					</div><!-- /rm-wrapper -->
+
+				</div><!-- /rm-container -->
+				
+	
+			
+        </div></div>
+
+		<!-- jQuery if needed -->
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/menu.js"></script>
+		<script type="text/javascript">
+			$(function() {
+
+				Menu.init();
+			
+			});
+		</script>
+        <script>
+       function inicia(){
+          var xIni;
+          var yIni;
+          var canvas = document.getElementById('pagewrap');
+          canvas.addEventListener('touchstart', function(e){
+              if (e.targetTouches.length == 1) {
+          var touch = e.targetTouches[0];
+          xIni = touch.pageX;
+          yIni = touch.pageY;
+       }
+          }, false);
+          
+          canvas.addEventListener('touchmove', function(e){
+              if (e.targetTouches.length == 1) {
+          var touch = e.targetTouches[0];
+          if((touch.pageX>xIni+20) && (touch.pageY> yIni-5) && (touch.pageY<yIni+5)){
+    	 	location.href='../index.html';
+          }
+          
+          if((touch.pageX<xIni-20) && (touch.pageY> yIni-5) && (touch.pageY<yIni+5)){
+			location.href='../index.html';
+          }
+       }
+          }, false);
+          
+                     
+       }
+    </script>
+    </body>
+</html>
